@@ -1,0 +1,150 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.id-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  width: 90%;
+  max-width: 900px;
+  background: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: relative;
+}
+
+.header {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  background-color: #002855;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin: -20px -20px 20px -20px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header img, .footer-pattern {
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+  
+.id-image {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.id-image2 {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 10px solid #002855;
+  object-fit: cover;
+}
+
+.bio-data {
+  grid-column: 2;
+  grid-row: 2;
+  text-align: left;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.contact-details {
+  grid-column: 2;
+  grid-row: 2;
+  padding: 20px;
+  margin-top: 200px;
+}
+
+.contact-details p {
+  margin: 10px 0;
+}
+
+footer {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  background-color: #002855;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin: 20px -20px -20px -20px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.profession {
+  grid-column: 2;
+  grid-row: 2;
+  padding: 20px;
+  margin-top: 120px;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+footer:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.contact-details p {
+  color: #002855;
+}
+
+.bio-data .last-name {
+  color: #002855;
+}
+
+.profession h1 {
+  background-color: rgb(14, 217, 149);
+  color: white;
+  padding: 10px;
+  width: 150px;
+  font-weight: 600;
+  
+}
+
+.bio-data .first-name {
+  color: rgb(14, 217, 149);
+  font-weight: 600;
+}
+
